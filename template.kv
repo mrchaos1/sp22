@@ -1,0 +1,31 @@
+<Template>:
+
+BoxLayout
+	
+	orientation: 'horizontal'
+
+	Button:
+		text: 'Button 1'
+		#123123
+		#size_hint: (3, 1)
+		
+
+	Label:
+		text: 'Описание Описание Описание Описание'
+	
+	BoxLayout:
+		orientation: 'vertical'
+		
+		Label:
+			text: 'Редактировать что-то'
+			size_hint: (1, 0.1)
+		
+		TextInput:
+			text: 'Какой-то текст'
+			
+		Button:
+			id: SubmitBtn
+			text: 'Кнопка - хуёпка'
+			size_hint: (1, 0.1)
+			on_press: root.test(SubmitBtn)
+			
